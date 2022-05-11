@@ -1,0 +1,51 @@
+<div class="grid cart-container" style="background-color: #F1F1F1;">
+  <div class="col-12">
+    <div class="grid grid-nogutter">
+      <div class="col-6">
+        <h2 class="cart-title"><i class="fa-solid fa-cart-shopping"></i> Carrinho</h2>
+      </div>
+      <div class="md:hidden col-6">
+        <h2 class="cart-title-close text-right" (click)="goToStore()"><i class="fa-solid fa-xmark"></i></h2>
+      </div>
+      <div class="col-12">
+        <div class="grid grid-nogutter px-4" style="background-color: white;">
+          <div class="col-12">
+            <h3>Calcular o Frete:</h3>
+          </div>
+          <div class="col-12 p-1" style="background-color: white;">
+            <!-- <input class="cart-input-cep" id="float-input" type="text" placeholder="Digite aqui o CEP de entrega" pInputText> -->
+            <p-inputMask styleClass="cart-input-cep" mask="99999-999" [(ngModel)]="cep" (onComplete)="calcFrete()"></p-inputMask>
+          </div>
+          <!-- <div class="col-12 my-3">
+            <app-cart-item></app-cart-item>
+          </div> -->
+          <!-- <div class="col-12 my-3">
+            <app-cart-item></app-cart-item>
+          </div> -->
+          <div class="col-12 my-3">
+            <app-cart-item-list></app-cart-item-list>
+          </div>
+          <div class="col-12">
+            <p-divider></p-divider>
+          </div>
+          <div class="col-6">
+            <h6 class="title-value">subtotal</h6>
+            <p class="cart-value">{{subtotal | currency : 'BRL' }}</p>
+          </div>
+          <div class="col-6">
+            <h6 class="title-value">frete</h6>
+            <p class="cart-value">{{valorFrete | currency : 'BRL' }}</p>
+          </div>
+          <div class="col-6 mt-3">
+            <h6 class="title-total">total</h6>
+            <p class="cart-total-value">{{total | currency : 'BRL' }}</p>
+          </div>
+          <div class="col-12 my-3">
+            <button class="ripple" (click)="clearCart()">FINALIZAR COMPRA</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

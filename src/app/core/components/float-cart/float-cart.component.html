@@ -1,0 +1,11 @@
+<div class="md:hidden float-cart">
+  <div class="grid grid-nogutter float-container p-2" (click)="goToCart()">
+    <div class="col-6">
+      <h2 class="cart-title"><i class="fa-solid fa-cart-shopping"></i> Carrinho</h2>
+    </div>
+    <div class="col-6 cart-float-value">
+      <h6 class="title-value">total</h6>
+      <p class="cart-value">{{total | currency : 'BRL' }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<p><a href="javascript:void()" (click)="decrement()">
+  <ng-container *ngIf="cartItem.quantidade === 1">
+    <i class="fa-solid fa-trash"></i>
+  </ng-container>
+  <ng-container *ngIf="cartItem.quantidade !== 1">
+    -
+  </ng-container>
+
+</a> {{cartItem.quantidade}} <a href="javascript:void()" (click)="increment()">+</a></p>

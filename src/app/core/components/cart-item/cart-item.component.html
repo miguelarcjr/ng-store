@@ -1,0 +1,16 @@
+<div class="grid grid-nogutter cart-item-container">
+  <div class="col-5">
+    <div class="cart-item-image" [ngStyle]="{'background-image': 'url(\''+cartItem.produto.thumb_url+'\')'}"></div>
+  </div>
+  <div class="col-7 px-3">
+    <div class="grid grid-nogutter">
+      <div class="col-12">
+        <h3 class="product-title">{{cartItem.produto.titulo}}</h3>
+        <p class="product-description">{{cartItem.produto.descricao}}</p>
+      </div>
+      <div class="col-12 text-right">
+        <app-input-increment [cartItem]="cartItem"></app-input-increment>
+      </div>
+    </div>
+  </div>
+</div>

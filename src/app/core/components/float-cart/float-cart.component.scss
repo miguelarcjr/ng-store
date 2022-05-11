@@ -1,0 +1,44 @@
+.float-cart {
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.cart-title {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+  i {
+    color: #60A12D;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+.float-container {
+  height: 100%;
+  align-content: center;
+}
+
+.title-value {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #434343;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+.cart-float-value {
+  text-align: right;
+}

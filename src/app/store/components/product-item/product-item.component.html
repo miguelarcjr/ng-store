@@ -1,0 +1,26 @@
+<div class="grid">
+  <div class="col-12">
+    <section class="grid grid-nogutter" style="background-color: white;">
+      <div class="col-12">
+        <div class="product-image" [ngStyle]="{'background-image': 'url(\''+produto.thumb_url+'\')'}"></div>
+      </div>
+      <div class="col-12">
+        <div class="grid grid-nogutter px-4">
+          <div class="col-12">
+            <h3 class="product-title">{{produto.titulo}}</h3>
+            <p class="product-description">{{produto.descricao}}</p>
+          </div>
+          <div class="col-6">
+            <p-rating [(ngModel)]="produto.avaliacao" [cancel]="false" [readonly]="true"></p-rating>
+          </div>
+          <div class="col-6">
+            <h3 class="product-price">{{produto.valor | currency : 'BRL' }}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="ripple" (click)="addProdutoToCart()">ADICIONAR AO CARRINHO</button>
+      </div>
+    </section>
+  </div>
+</div>

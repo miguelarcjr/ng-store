@@ -1,0 +1,110 @@
+.cart-title {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+  i {
+    color: #60A12D;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+.cart-title-close {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+  i {
+    color: #000000;
+    font-size: 26px;
+    margin-right: 20px;
+
+  }
+}
+
+:host ::ng-deep .cart-input-cep {
+  width: 100%;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Poppins', sans-serif;
+    opacity: 1; /* Firefox */
+  }
+
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-value {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #434343;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  color: #434343;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-total-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #7e6aad radial-gradient(circle, transparent 1%, #7e6aad 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6B5995;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button {
+  border: none;
+  user-select: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #6B5995;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cart-container {
+  overflow: auto;
+  max-height: 100vh;
+}
